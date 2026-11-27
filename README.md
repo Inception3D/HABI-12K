@@ -4,9 +4,31 @@ HABI-12K is a synthetic indoor 3D dataset with 12,081 scenes and 2.16 million `2
 
 **Paper** · Coming soon | **Dataset** · [Hugging Face](https://huggingface.co/datasets/Inception3D/HABI-12K) | **Project page** · [HABI-12K](https://sibo2rr.github.io/HABI-12K/)
 
+## Download
+
+Run the downloader from the cloned repository with Python 3.10 or later.
+
+```bash
+python -m pip install 'huggingface_hub>=1.0,<2'
+
+# Download all files in the published 1K group.
+python scripts/download.py --groups 1K
+
+# Download only RGB videos from all published groups.
+python scripts/download.py --modalities rgb
+
+# Download RGB videos and camera metadata from 1K for use with the loader.
+python scripts/download.py --groups 1K --modalities rgb metadata
+
+# Preview the number and size of files for a selection.
+python scripts/download.py --groups 1K --modalities rgb --dry-run
+```
+
+Use `--groups` to select one or more groups and `--modalities` to select any of `rgb`, `normal`, `depth`, and `metadata`. The loader requires `metadata` (`transforms.json`) and uses depth when reading normals. Omit `--groups` to include all currently published groups. Files keep their repository paths under `HABI-12K/`. Use `--output-dir` to choose another destination. Rerun the same command to resume a download via `https://hf-mirror.com`.
+
 ## Data format
 
-Download the groups you need from Hugging Face and preserve the scene directory layout when extracting them. The main dataset is organized into `1K` through `12K`, and the held-out scenes are under `HABI-Bench`. Every group uses the scene layout shown under `1K/`.
+The main dataset is organized into `1K` through `12K`, and the held-out scenes are under `HABI-Bench`. Every group uses the scene layout shown under `1K/`.
 
 ```text
 HABI-12K/
