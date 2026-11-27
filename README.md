@@ -6,7 +6,7 @@ HABI-12K is a synthetic indoor 3D dataset with 12,081 scenes and 2.16 million `2
 
 **Dataset** · [Hugging Face](https://huggingface.co/datasets/Inception3D/HABI-12K)
 
-<!-- Project page URL -->
+**Project page** · [HABI-12K](https://sibo2rr.github.io/HABI-12K/)
 
 ## Data format
 
