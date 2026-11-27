@@ -2,11 +2,7 @@
 
 HABI-12K is a synthetic indoor 3D dataset with 12,081 scenes and 2.16 million `2048 × 1024` panoramas. Each observation pairs RGB with metric depth, world-space shading normals, and a camera pose along a continuous trajectory. HABI-Bench contains 117 held-out scenes for camera estimation, depth prediction, and novel view synthesis.
 
-**Paper** · Coming soon
-
-**Dataset** · [Hugging Face](https://huggingface.co/datasets/Inception3D/HABI-12K)
-
-**Project page** · [HABI-12K](https://sibo2rr.github.io/HABI-12K/)
+**Paper** · Coming soon | **Dataset** · [Hugging Face](https://huggingface.co/datasets/Inception3D/HABI-12K) | **Project page** · [HABI-12K](https://sibo2rr.github.io/HABI-12K/)
 
 ## Data format
 
