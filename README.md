@@ -6,7 +6,7 @@ HABI-12K is a synthetic indoor 3D dataset with 12,081 scenes and 2.16 million `2
 
 ## Data format
 
-Download the groups you need from Hugging Face and preserve the scene directory layout when extracting them. The main dataset is organized into `1K` through `12K`, and the held-out scenes are under `HABI-Bench`.
+Download the groups you need from Hugging Face and preserve the scene directory layout when extracting them. The main dataset is organized into `1K` through `12K`, and the held-out scenes are under `HABI-Bench`. Every group uses the scene layout shown under `1K/`.
 
 ```text
 HABI-12K/
@@ -18,6 +18,17 @@ HABI-12K/
 │       │   ├── 000000.exr
 │       │   └── 000001.exr
 │       └── transforms.json
+├── 2K/
+├── 3K/
+├── 4K/
+├── 5K/
+├── 6K/
+├── 7K/
+├── 8K/
+├── 9K/
+├── 10K/
+├── 11K/
+├── 12K/
 └── HABI-Bench/
     └── <scene_id>/
 ```
